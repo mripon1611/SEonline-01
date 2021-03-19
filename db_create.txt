@@ -1,0 +1,14 @@
+create database online1;
+use online1;
+
+create table appointment( 
+	id INT(10) AUTO_INCREMENT, 
+	doctor_name varchar(50), 
+	patient_name varchar(50),
+	A_date date,
+	PRIMARY KEY(id) 
+);
+
+insert into appointment values ( '', 'Dr X', 'Mr X','2021-03-10' );
+insert into appointment values ( '', 'Dr Y', 'Mr Y','2021-03-11' );
+select * from appointment;
